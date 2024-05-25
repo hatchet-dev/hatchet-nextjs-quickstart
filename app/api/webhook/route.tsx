@@ -1,11 +1,10 @@
 import { NextRequest } from 'next/server'
-import { registerWorker } from '@/lib/workflow'
+import { hatchet, workflow } from '@/lib/workflow'
 
 const secret = process.env.HATCHET_SECRET || 'secret'
 
-const worker = registerWorker()
+const webhooks = hatchet.webhooks(workflow)
 
 export async function POST(req: NextRequest) {
-  const w = await worker
-  return w.handleVercelRequest(req, secret)
+  return webhooks.handleVercelRequest(req, secret)
 }

@@ -2,10 +2,8 @@ import Hatchet, { Workflow } from '@hatchet-dev/typescript-sdk'
 
 export const hatchet = Hatchet.init()
 
-export const registerWorker = async () => {
-  const w = await hatchet.worker('example-worker')
-  await w.registerWorkflow(workflow)
-  return w
+export const getWorker = async () => {
+  return hatchet.worker('example-worker')
 }
 
 export const workflow: Workflow = {
