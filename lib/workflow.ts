@@ -9,7 +9,6 @@ export const getWorker = async () => {
 export const workflow: Workflow = {
   id: 'vercel-workflow',
   description: 'A webhook workflow that runs on Vercel!',
-  webhook: 'http://localhost:3000/api/webhook',
   on: {
     event: 'vercel:user:create',
   },
