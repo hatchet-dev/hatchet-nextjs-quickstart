@@ -2,7 +2,7 @@ import { NextRequest } from 'next/server'
 import { hatchet } from '@/lib/workflow'
 
 export async function GET(req: NextRequest) {
-  await hatchet.event.push('vercel:user:create', {
+  await hatchet.event.push('trigger:event', {
     hello: 'world',
   })
 

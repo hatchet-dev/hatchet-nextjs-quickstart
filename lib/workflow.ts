@@ -7,10 +7,10 @@ export const getWorker = async () => {
 }
 
 export const workflow: Workflow = {
-  id: 'vercel-workflow',
-  description: 'A webhook workflow that runs on Vercel!',
+  id: 'nextjs-workflow',
+  description: 'A webhook workflow that runs on Next.js!',
   on: {
-    event: 'vercel:user:create',
+    event: 'trigger:event',
   },
   steps: [
     {
