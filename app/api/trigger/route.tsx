@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server'
 import { hatchet } from '@/lib/workflow'
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: NextRequest) {
