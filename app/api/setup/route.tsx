@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getWorker, workflow } from '@/lib/workflow'
 
+export const revalidate = 0;
+
 export async function GET(req: NextRequest) {
   const w = await getWorker()
 
