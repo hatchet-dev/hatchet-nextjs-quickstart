@@ -1,6 +1,5 @@
 import { hatchet, workflow } from '@/lib/workflow'
 
-export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 const secret = process.env.HATCHET_WEBHOOK_SECRET || 'secret'
