@@ -27,3 +27,29 @@ export const workflow: Workflow = {
     },
   ],
 }
+
+export const workflow2: Workflow = {
+  id: 'nextjs-workflow-2',
+  description: '2 A webhook workflow that runs on Next.js!',
+  on: {
+    event: 'trigger:event',
+  },
+  steps: [
+    {
+      name: '2step1',
+      run: (ctx) => {
+        console.log(`executed ${ctx.stepName()}`)
+        return { step1: '2step1' }
+      },
+    },
+    {
+      name: '2step2',
+      parents: ['2step1'],
+      run: (ctx) => {
+        console.log(`executed ${ctx.stepName()}`)
+        console.log('2step1 output:', ctx.stepOutput('2step1'))
+        return { step2: '2step2' }
+      },
+    },
+  ],
+}
