@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@hatchet-dev/typescript-sdk':
-    specifier: 0.8.0-alpha.2
-    version: 0.8.0-alpha.2
+    specifier: 0.8.0-alpha.3
+    version: 0.8.0-alpha.3
   next:
     specifier: 14.2.3
     version: 14.2.3(react-dom@18.3.1)(react@18.3.1)
@@ -124,8 +124,8 @@ packages:
       yargs: 17.7.2
     dev: false
 
-  /@hatchet-dev/typescript-sdk@0.8.0-alpha.2:
-    resolution: {integrity: sha512-ZbOp/Y2ak+SBUAjVUiOM2e+1nQh+FarlP/imzxGHLEoWfSarforGddT1TOPzoayX4qTjgKkgXuSuZ0v3+0tt1A==}
+  /@hatchet-dev/typescript-sdk@0.8.0-alpha.3:
+    resolution: {integrity: sha512-/5E6sOo1C/qgK+wliYATpO9e+1eh32PvzSALyQSWEWXYVVodFUShmVmelQ4MJH3vaLwfuM9VO8RJ/lZit0FPCA==}
     dependencies:
       '@types/qs': 6.9.15
       abort-controller-x: 0.4.3

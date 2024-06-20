@@ -2,10 +2,6 @@ import Hatchet, { Workflow } from '@hatchet-dev/typescript-sdk'
 
 export const hatchet = Hatchet.init()
 
-export const getWorker = async () => {
-  return hatchet.worker('example-worker')
-}
-
 export const workflow: Workflow = {
   id: 'nextjs-workflow',
   description: 'A webhook workflow that runs on Next.js!',
