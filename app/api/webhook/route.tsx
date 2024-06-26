@@ -7,4 +7,4 @@ const secret = process.env.HATCHET_WEBHOOK_SECRET || 'secret'
 
 const webhooks = hatchet.webhooks([workflow, workflow2])
 
-export const { GET, POST } = webhooks.nextJSHandler({ secret })
+export const { GET, PUT, POST } = webhooks.nextJSHandler({ secret })
