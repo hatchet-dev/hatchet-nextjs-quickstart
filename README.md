@@ -1,4 +1,4 @@
-# Hatchet Next.js Starter
+# Hatchet Next.js Quickstart
 
 This is a starter template for running [Hatchet](https://hatchet.dev) workflows on [Next.js](https://nextjs.org/).
 
